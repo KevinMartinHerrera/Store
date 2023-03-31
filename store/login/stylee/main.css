@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #34344e;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed ;
+}
+
+main{
+    width: 100%;
+    padding:  20PX;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.container-all{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.registration-below{
+    width: 100%;
+    padding: 5px 19px;
+    display: grid;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color:rgba(86, 105, 129, .7);
+    border-radius: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(15rem,20rem));    
+}
+
+
+.registration-below div{
+    margin:100px 40px;
+    color:  whitesmoke;
+    transition: all 500mm;
+}
+
+.registration-below div p, 
+.registration-below div button{
+    margin-top: 30px;
+}
+
+.registration-below div h3{
+    font-weight: 400px;
+    font-size: 30px;
+
+}
+
+.registration-below button{
+    background: transparent;
+    padding: 10px 40px ;
+    border:  2px solid #fff;
+    font-size:  15px;
+    font-weight: 600px;
+    cursor: pointer;
+    color: white;
+    transition:  all 300ms;
+}
+
+.registration-below button:hover{
+    background:  #fff;
+    color: #566981;
+
+}
+.registration-below-login{
+    opacity: 0;
+}
+
+/* formularios estilo*/
+.container__login-register{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    max-width: 20rem;
+    position: relative;
+    top: -185px;
+    left: 15px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.container__login-register form{
+    width:  100%;
+    padding: 80px 20px;
+    background: #cbdad5;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.container__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #34344e ;
+}
+
+.container__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size:  16px;
+    outline: none;
+}
+
+.container__login-register form button{
+   padding: 10px 40px; 
+   margin-top: 40px;
+   border: none;
+   font-size: 14px;
+   background:#566981;
+   border-radius: 10px;
+   color: white;
+   cursor: pointer;
+}
+
+.container__login-register button:hover{
+    background:  #fff;
+    color: #566981;
+}
+
+.form_login {
+    opacity: 1;
+    display: block;
+}
+.form__register{
+    display: none;
+}
+
+#l2-idk{
+    display: none;
+}
+
+@media screen  and (max-width: 850px){
+    .container__login-register{
+        width: 100%;
+        max-width: 50rem;
+    }
+    #l2-idk{
+        display: block;
+    }
+}
